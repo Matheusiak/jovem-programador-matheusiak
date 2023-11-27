@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url("_imagens/yellow-bg.jpg") no-repeat;
+    background-position: 50% 25%;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo,
+.usuario {
+    flex: 1;
+    text-align: center;
+}
+.logo img {
+    position: relative;
+    right: 8rem;
+    max-width: 100%;
+    width: 135px;
+    height: auto;
+}
+.usuario {
+    text-align: right;
+}
+.usuario img {
+    max-width: 100%;
+    width: 50px;
+    height: auto;
+}
+
+.search {
+    max-width: 100%;
+    position: relative;
+    left: 8rem;
+    align-items: center;
+}
+button {
+    position: relative;
+    left: 8.4rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button img {
+    max-width: 100%;
+    width: 18px;
+}
+
+.lPesquisa {
+    position: absolute;
+    top: 20%;
+    left: 79.5%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mensagem {
+    font-size: 3em;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.2em;
+}
